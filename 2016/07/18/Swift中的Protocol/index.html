@@ -80,16 +80,16 @@
 
 
 
-<meta name="description" content="#Swift中的ProtocolProtocol，一个非常强大且灵活的东西，尤其在Swift中。我们可以看到，Swift中大多数类都是实现了很多协议的，比如Array，Dictionary实现了CollectionType这个协议，而CollectionType又是遵循了SequenceType和Indexable协议，可以说，Swift就是在面向协议编程，也很符合设计模式中针对接口编程而不是针对">
+<meta name="description" content="Protocol，一个非常强大且灵活的东西，尤其在Swift中。我们可以看到，Swift中大多数类都是实现了很多协议的，比如Array，Dictionary实现了CollectionType这个协议，而CollectionType又是遵循了SequenceType和Indexable协议，可以说，Swift就是在面向协议编程，也很符合设计模式中针对接口编程而不是针对实现编程的原则，通过协议我们也可">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Raylcs">
+<meta property="og:title" content="Swift中的Protocol">
 <meta property="og:url" content="http://yoursite.com/2016/07/18/Swift中的Protocol/index.html">
 <meta property="og:site_name" content="Raylcs">
-<meta property="og:description" content="#Swift中的ProtocolProtocol，一个非常强大且灵活的东西，尤其在Swift中。我们可以看到，Swift中大多数类都是实现了很多协议的，比如Array，Dictionary实现了CollectionType这个协议，而CollectionType又是遵循了SequenceType和Indexable协议，可以说，Swift就是在面向协议编程，也很符合设计模式中针对接口编程而不是针对">
-<meta property="og:updated_time" content="2016-07-18T13:25:56.000Z">
+<meta property="og:description" content="Protocol，一个非常强大且灵活的东西，尤其在Swift中。我们可以看到，Swift中大多数类都是实现了很多协议的，比如Array，Dictionary实现了CollectionType这个协议，而CollectionType又是遵循了SequenceType和Indexable协议，可以说，Swift就是在面向协议编程，也很符合设计模式中针对接口编程而不是针对实现编程的原则，通过协议我们也可">
+<meta property="og:updated_time" content="2016-07-18T13:29:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Raylcs">
-<meta name="twitter:description" content="#Swift中的ProtocolProtocol，一个非常强大且灵活的东西，尤其在Swift中。我们可以看到，Swift中大多数类都是实现了很多协议的，比如Array，Dictionary实现了CollectionType这个协议，而CollectionType又是遵循了SequenceType和Indexable协议，可以说，Swift就是在面向协议编程，也很符合设计模式中针对接口编程而不是针对">
+<meta name="twitter:title" content="Swift中的Protocol">
+<meta name="twitter:description" content="Protocol，一个非常强大且灵活的东西，尤其在Swift中。我们可以看到，Swift中大多数类都是实现了很多协议的，比如Array，Dictionary实现了CollectionType这个协议，而CollectionType又是遵循了SequenceType和Indexable协议，可以说，Swift就是在面向协议编程，也很符合设计模式中针对接口编程而不是针对实现编程的原则，通过协议我们也可">
 
 
 
@@ -107,7 +107,7 @@
   };
 </script>
 
-  <title>  | Raylcs </title>
+  <title> Swift中的Protocol | Raylcs </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -227,7 +227,7 @@
             
             
               
-                
+                Swift中的Protocol
               
             
           </h1>
@@ -267,7 +267,7 @@
       
 
       
-        <p>#Swift中的Protocol<br>Protocol，一个非常强大且灵活的东西，尤其在Swift中。我们可以看到，Swift中大多数类都是实现了很多协议的，比如Array，Dictionary实现了CollectionType这个协议，而CollectionType又是遵循了SequenceType和Indexable协议，可以说，Swift就是在面向协议编程，也很符合设计模式中针对接口编程而不是针对实现编程的原则，通过协议我们也可以减少继承，多使用组合，这样我们的程序即方便扩展，也方便维护。</p>
+        <p>Protocol，一个非常强大且灵活的东西，尤其在Swift中。我们可以看到，Swift中大多数类都是实现了很多协议的，比如Array，Dictionary实现了CollectionType这个协议，而CollectionType又是遵循了SequenceType和Indexable协议，可以说，Swift就是在面向协议编程，也很符合设计模式中针对接口编程而不是针对实现编程的原则，通过协议我们也可以减少继承，多使用组合，这样我们的程序即方便扩展，也方便维护。</p>
 <p>当然也有人会问，OC里面不是也有协议这个东西么，相比OC的协议，Swift中增加了哪些更强大的功能呢？那么接下来我们就来看一下Swift中协议的强大之处。</p>
 <p>##给协议添加默认实现<br>在Swift中，可以给协议添加默认实现，不过默认实现必须写在extension中。<br>比如我们定义一个ObjectPrintable的协议，这个协议定义了对象如何描述自己，里面有一个description的属性</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">protocol ObjectPrintable &#123;</span><br><span class="line">    var description: String &#123; get set &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
